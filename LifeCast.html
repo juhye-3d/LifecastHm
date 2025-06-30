@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeCast - 당신의 인생을 영화처럼</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Playfair+Display:wght@400;500;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div class="loading-screen">
+        <div class="loading-content">
+            <div class="film-reel">
+                <div class="reel"></div>
+                <div class="reel"></div>
+            </div>
+            <div class="loading-text">LifeCast</div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <div class="camera-body">
+                            <div class="camera-lens"></div>
+                            <div class="camera-flash"></div>
+                        </div>
+                    </div>
+                    <span class="logo-text">LifeCast</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">홈</a></li>
+                    <li><a href="#about" class="nav-link">서비스</a></li>
+                    <li><a href="#process" class="nav-link">제작과정</a></li>
+                    <li><a href="#gallery" class="nav-link">갤러리</a></li>
+                    <li><a href="#contact" class="nav-link">문의</a></li>
+                </ul>
+                <button class="cta-button">
+                    <span>시작하기</span>
+                    <div class="button-glow"></div>
+                </button>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="floating-elements">
+                <div class="floating-element" style="--delay: 0s; --duration: 8s;"></div>
+                <div class="floating-element" style="--delay: 2s; --duration: 10s;"></div>
+                <div class="floating-element" style="--delay: 4s; --duration: 12s;"></div>
+                <div class="floating-element" style="--delay: 6s; --duration: 9s;"></div>
+            </div>
+            <div class="film-strip film-strip-1"></div>
+            <div class="film-strip film-strip-2"></div>
+            <div class="gradient-orbs">
+                <div class="orb orb-1"></div>
+                <div class="orb orb-2"></div>
+                <div class="orb orb-3"></div>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-icon">✨</span>
+                <span>AI 기반 감정 분석 기술</span>
+            </div>
+            
+            <h1 class="hero-title">
+                <span class="title-line title-main">당신의 인생,</span>
+                <span class="title-line title-highlight">가장 찬란했던</span>
+                <span class="title-line title-highlight">순간만 모아</span>
+                <span class="title-line title-sub">한 편의 영화로.</span>
+            </h1>
+            
+            <p class="hero-subtitle">
+                <span class="subtitle-line">당신의 인생을 영화처럼!</span>
+                <span class="subtitle-line">감정으로 편집된 하이라이트 자서전</span>
+            </p>
+            
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-number">10,000+</div>
+                    <div class="stat-label">제작된 영상</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">만족도</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">24시간</div>
+                    <div class="stat-label">평균 제작시간</div>
+                </div>
+            </div>
+            
+            <div class="hero-buttons">
+                <button class="btn-primary">
+                    <span>나만의 영화 만들기</span>
+                    <div class="btn-shine"></div>
+                </button>
+                <button class="btn-secondary">
+                    <span class="btn-icon">▶</span>
+                    <span>미리보기</span>
+                </button>
+            </div>
+        </div>
+        
+        <div class="hero-visual">
+            <div class="video-showcase">
+                <div class="video-frame main-video" style="background-image: url('images/minsu.png'); background-size: contain; background-position: center; background-repeat: no-repeat; background-color: #000;">
+                    <div class="video-overlay">
+                        <div class="play-button">
+                            <div class="play-icon"></div>
+                        </div>
+                        <div class="video-info">
+                            <div class="video-title">김민수님의 인생 이야기</div>
+                            <div class="video-duration">3:42</div>
+                        </div>
+                    </div>
+                    <div class="video-glow"></div>
+                </div>
+                
+                <div class="video-thumbnails">
+                    <div class="thumbnail">
+                        <div class="thumbnail-overlay">
+                            <span>첫사랑</span>
+                        </div>
+                    </div>
+                    <div class="thumbnail">
+                        <div class="thumbnail-overlay">
+                            <span>졸업</span>
+                        </div>
+                    </div>
+                    <div class="thumbnail">
+                        <div class="thumbnail-overlay">
+                            <span>결혼</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span>Why LifeCast</span>
+                </div>
+                <h2 class="section-title">
+                    <span class="title-line">기억되고 싶은 순간을</span>
+                    <span class="title-line highlight">감정과 함께 남기세요</span>
+                </h2>
+                <p class="section-description">
+                    LifeCast는 단순한 영상 제작을 넘어, 당신의 감정과 기억을 하나의 아름다운 이야기로 엮어드립니다.
+                    AI 기술과 전문 편집진의 손길이 만나 당신만의 특별한 자서전을 완성합니다.
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card premium">
+                    <div class="feature-header">
+                        <div class="feature-icon">
+                            <div class="icon-heart">💝</div>
+                            <div class="icon-glow"></div>
+                        </div>
+                        <div class="feature-badge">AI 기술</div>
+                    </div>
+                    <h3>감정 기반 편집</h3>
+                    <p>단순한 시간순이 아닌, 감정의 흐름과 강도를 분석하여 당신만의 스토리를 구성합니다. 기쁨, 슬픔, 설렘의 순간들이 자연스럽게 연결됩니다.</p>
+                    <div class="feature-details">
+                        <div class="detail-item">
+                            <span class="detail-icon">🎯</span>
+                            <span>감정 인식률 95%</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">⚡</span>
+                            <span>실시간 분석</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feature-card premium">
+                    <div class="feature-header">
+                        <div class="feature-icon">
+                            <div class="icon-palette">🎨</div>
+                            <div class="icon-glow"></div>
+                        </div>
+                        <div class="feature-badge">맞춤형</div>
+                    </div>
+                    <h3>개인 맞춤 테마</h3>
+                    <p>당신의 성격, 취향, 인생 철학에 맞는 다양한 테마와 스타일로 영상을 제작합니다. 로맨틱, 모험, 성장 등 20가지 테마 중 선택하세요.</p>
+                    <div class="feature-details">
+                        <div class="detail-item">
+                            <span class="detail-icon">🎭</span>
+                            <span>20+ 테마</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">🎵</span>
+                            <span>맞춤 음악</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="feature-card premium">
+                    <div class="feature-header">
+                        <div class="feature-icon">
+                            <div class="icon-film">🎬</div>
+                            <div class="icon-glow"></div>
+                        </div>
+                        <div class="feature-badge">프리미엄</div>
+                    </div>
+                    <h3>영화 같은 퀄리티</h3>
+                    <p>전문 영상 제작진과 최신 AI 기술의 결합으로 Hollywood 수준의 퀄리티를 제공합니다. 4K 해상도와 돌비 사운드로 완성됩니다.</p>
+                    <div class="feature-details">
+                        <div class="detail-item">
+                            <span class="detail-icon">📹</span>
+                            <span>4K 해상도</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-icon">🔊</span>
+                            <span>돌비 사운드</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span>How It Works</span>
+                </div>
+                <h2 class="section-title">
+                    <span class="title-line">4단계로 완성되는</span>
+                    <span class="title-line highlight">당신만의 자서전 영화</span>
+                </h2>
+            </div>
+            
+            <div class="process-timeline horizontal-scroll">
+                <div class="timeline-line"></div>
+                
+                <div class="process-step" data-step="1">
+                    <div class="step-marker">
+                        <div class="step-number">01</div>
+                        <div class="step-pulse"></div>
+                    </div>
+                    <div class="step-duration">5분 소요</div>
+                    <div class="step-content">
+                        <div class="step-header">
+                            <h3>테마 선택</h3>
+                        </div>
+                        <p>남기고 싶은 추억 테마를 선택하세요.</p>
+                        <div class="step-visual theme-selector">
+                            <div class="theme-grid">
+                                <div class="theme-card romantic">
+                                    <div class="theme-icon">💕</div>
+                                    <span>로맨틱</span>
+                                </div>
+                                <div class="theme-card adventure">
+                                    <div class="theme-icon">🌟</div>
+                                    <span>모험</span>
+                                </div>
+                                <div class="theme-card growth">
+                                    <div class="theme-icon">🌱</div>
+                                    <span>성장</span>
+                                </div>
+                                <div class="theme-card family">
+                                    <div class="theme-icon">👨‍👩‍👧‍👦</div>
+                                    <span>가족</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-step" data-step="2">
+                    <div class="step-marker">
+                        <div class="step-number">02</div>
+                        <div class="step-pulse"></div>
+                    </div>
+                    <div class="step-duration">15분 소요</div>
+                    <div class="step-content">
+                        <div class="step-header">
+                            <h3>하이라이트 수집</h3>
+                        </div>
+                        <p>AI가 제시하는 질문에 답하며 <br> 감정의 강도와 의미를 함께 기록해보세요 <br>인생의 소중한 순간들을 카드로 정리해드려요.</p>
+                        <div class="step-visual memory-collection">
+                            <div class="memory-stack">
+                                <div class="memory-card card-1">
+                                    <div class="card-header">
+                                        <span class="card-emotion">😊</span>
+                                        <span class="card-date">2018.03</span>
+                                    </div>
+                                    <div class="card-title">첫 직장 입사</div>
+                                    <div class="card-emotion-bar">
+                                        <div class="emotion-fill" style="width: 85%;"></div>
+                                    </div>
+                                </div>
+                                <div class="memory-card card-2">
+                                    <div class="card-header">
+                                        <span class="card-emotion">💕</span>
+                                        <span class="card-date">2019.12</span>
+                                    </div>
+                                    <div class="card-title">프로포즈</div>
+                                    <div class="card-emotion-bar">
+                                        <div class="emotion-fill" style="width: 95%;"></div>
+                                    </div>
+                                </div>
+                                <div class="memory-card card-3">
+                                    <div class="card-header">
+                                        <span class="card-emotion">🎓</span>
+                                        <span class="card-date">2016.02</span>
+                                    </div>
+                                    <div class="card-title">대학 졸업</div>
+                                    <div class="card-emotion-bar">
+                                        <div class="emotion-fill" style="width: 78%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-step" data-step="3">
+                    <div class="step-marker">
+                        <div class="step-number">03</div>
+                        <div class="step-pulse"></div>
+                    </div>
+                    <div class="step-duration">10분 소요</div>
+                    <div class="step-content">
+                        <div class="step-header">
+                            <h3>하이라이트 갤러리</h3>
+                        </div>
+                        <p>수집된 기억들을 시각적으로 확인하고 편집할 수 있어요. <br>순서 조정, 강조 표시, 추가 설명 등이 가능합니다.</p>
+                        <div class="step-visual gallery-preview">
+                            <div class="gallery-container">
+                                <div class="gallery-item featured" style="background-image: url('images/wedding.png'); background-size: cover; background-position: center;">
+                                    <div class="item-overlay">
+                                        <div class="item-title">결혼식</div>
+                                        <div class="item-emotion">💒</div>
+                                    </div>
+                                </div>
+                                <div class="gallery-item" style="background-image: url('images/baby.png'); background-size: cover; background-position: center;">
+                                    <div class="item-overlay">
+                                        <div class="item-title">첫 아이</div>
+                                        <div class="item-emotion">👶</div>
+                                    </div>
+                                </div>
+                                <div class="gallery-item">
+                                    <div class="item-overlay">
+                                        <div class="item-title">승진</div>
+                                        <div class="item-emotion">🎉</div>
+                                    </div>
+                                </div>
+                                <div class="gallery-item">
+                                    <div class="item-overlay">
+                                        <div class="item-title">여행</div>
+                                        <div class="item-emotion">✈️</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-step" data-step="4">
+                    <div class="step-marker">
+                        <div class="step-number">04</div>
+                        <div class="step-pulse"></div>
+                    </div>
+                    <div class="step-duration">24시간 소요</div>
+                    <div class="step-content">
+                        <div class="step-header">
+                            <h3>감정 편지 영상 생성</h3>
+                        </div>
+                        <p>AI가 당신의 감정을 분석하여 완성된 자서전 영상을 제작합니다.<br> 전문 편집진의 최종 검수를 거쳐 완벽한 작품으로 탄생합니다.</p>
+                        <div class="step-visual video-generation">
+                            <div class="generation-process">
+                                <div class="process-bar">
+                                    <div class="process-fill"></div>
+                                </div>
+                                <div class="process-steps">
+                                    <div class="mini-step completed">감정 분석</div>
+                                    <div class="mini-step completed">스토리 구성</div>
+                                    <div class="mini-step active">영상 편집</div>
+                                    <div class="mini-step">음악 매칭</div>
+                                    <div class="mini-step">최종 렌더링</div>
+                                </div>
+                                <div class="final-preview">
+                                    <div class="preview-screen">
+                                        <div class="preview-play">▶</div>
+                                        <div class="preview-title">나의 인생 이야기</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span>Portfolio</span>
+                </div>
+                <h2 class="section-title">
+                    <span class="title-line">실제 제작된</span>
+                    <span class="title-line highlight">감동적인 이야기들</span>
+                </h2>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item featured">
+                    <div class="portfolio-video" style="background-image: url('images/yunghi.png'); background-size: cover; background-position: center;">
+                        <div class="video-overlay">
+                            <div class="play-btn">▶</div>
+                            <div class="video-info">
+                                <div class="video-title">김영희님의 60년 인생</div>
+                                <div class="video-stats">
+                                    <span>👁 2.3M</span>
+                                    <span>💝 45K</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-description">
+                        <h4>할머니의 사랑 이야기</h4>
+                        <p>"60년간의 사랑과 희생, 그리고 가족에 대한 무한한 애정을 담은 감동적인 자서전"</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">가족</span>
+                            <span class="tag">사랑</span>
+                            <span class="tag">희생</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-video">
+                        <div class="video-overlay">
+                            <div class="play-btn">▶</div>
+                            <div class="video-info">
+                                <div class="video-title">박민수님의 창업 스토리</div>
+                                <div class="video-stats">
+                                    <span>👁 890K</span>
+                                    <span>💝 12K</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-description">
+                        <h4>꿈을 향한 도전</h4>
+                        <p>"실패와 좌절을 딛고 일어선 젊은 CEO의 열정적인 도전기"</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">도전</span>
+                            <span class="tag">성공</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <div class="portfolio-video">
+                        <div class="video-overlay">
+                            <div class="play-btn">▶</div>
+                            <div class="video-info">
+                                <div class="video-title">이수진님의 예술 여정</div>
+                                <div class="video-stats">
+                                    <span>👁 1.2M</span>
+                                    <span>💝 28K</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-description">
+                        <h4>예술가의 혼</h4>
+                        <p>"화가로서의 삶과 작품에 담긴 깊은 철학과 감성의 이야기"</p>
+                        <div class="portfolio-tags">
+                            <span class="tag">예술</span>
+                            <span class="tag">철학</span>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span>Reviews</span>
+                </div>
+                <h2 class="section-title">
+                    <span class="title-line">고객들의</span>
+                    <span class="title-line highlight">진심 어린 후기</span>
+                </h2>
+            </div>
+            <div class="card-strip-outer">
+                <div class="card-strip">
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="quote-mark">"</div>
+                            <p>평생 간직하고 싶었던 순간들이 이렇게 아름다운 영상으로 완성될 줄 몰랐어요. 가족들과 함께 보며 눈물을 흘렸습니다. 정말 감사합니다.</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">👩‍🦳</div>
+                                <div class="author-info">
+                                    <div class="author-name">김영희님</div>
+                                    <div class="author-age">67세, 주부</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <div class="rating-text">완벽해요!</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="quote-mark">"</div>
+                            <p>창업 과정의 힘들었던 순간들이 이렇게 의미있는 이야기로 재탄생했네요. 직원들과 함께 보며 다시 한번 초심을 다졌습니다.</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">👨‍💼</div>
+                                <div class="author-info">
+                                    <div class="author-name">박민수님</div>
+                                    <div class="author-age">35세, CEO</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <div class="rating-text">최고예요!</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="quote-mark">"</div>
+                            <p>예술가로서의 삶과 작품에 담긴 깊은 철학과 감성의 이야기, LifeCast 덕분에 가족과 함께 감동을 나눴어요.</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">👩‍🎨</div>
+                                <div class="author-info">
+                                    <div class="author-name">이수진님</div>
+                                    <div class="author-age">42세, 화가</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <div class="rating-text">감동이에요!</div>
+                        </div>
+                    </div>
+                    <!-- 무한루프 효과를 위해 카드 strip을 한 번 더 복제 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="quote-mark">"</div>
+                            <p>평생 간직하고 싶었던 순간들이 이렇게 아름다운 영상으로 완성될 줄 몰랐어요. 가족들과 함께 보며 눈물을 흘렸습니다. 정말 감사합니다.</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">👩‍🦳</div>
+                                <div class="author-info">
+                                    <div class="author-name">김영희님</div>
+                                    <div class="author-age">67세, 주부</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <div class="rating-text">완벽해요!</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="quote-mark">"</div>
+                            <p>창업 과정의 힘들었던 순간들이 이렇게 의미있는 이야기로 재탄생했네요. 직원들과 함께 보며 다시 한번 초심을 다졌습니다.</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">👨‍💼</div>
+                                <div class="author-info">
+                                    <div class="author-name">박민수님</div>
+                                    <div class="author-age">35세, CEO</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <div class="rating-text">최고예요!</div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="quote-mark">"</div>
+                            <p>예술가로서의 삶과 작품에 담긴 깊은 철학과 감성의 이야기, LifeCast 덕분에 가족과 함께 감동을 나눴어요.</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">👩‍🎨</div>
+                                <div class="author-info">
+                                    <div class="author-name">이수진님</div>
+                                    <div class="author-age">42세, 화가</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <div class="rating-text">감동이에요!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-background">
+            <div class="cta-particles">
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+                <div class="particle"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="cta-content">
+                <div class="cta-badge">
+                    <span>✨ 특별 런칭 이벤트</span>
+                </div>
+                <h2>당신의 인생 이야기를<br>지금 시작하세요</h2>
+                <p>소중한 기억들이 사라지기 전에, 지금 바로 당신만의 영화를 만들어보세요.<br>첫 100명 한정으로 50% 할인 혜택을 제공합니다.</p>
+                
+                <div class="cta-offer">                    
+                    <div class="offer-timer">
+                        <div class="timer-label">남은 시간</div>
+                        <div class="timer-display">
+                            <div class="timer-unit">
+                                <div class="timer-number">23</div>
+                                <div class="timer-text">시간</div>
+                            </div>
+                            <div class="timer-separator">:</div>
+                            <div class="timer-unit">
+                                <div class="timer-number">45</div>
+                                <div class="timer-text">분</div>
+                            </div>
+                            <div class="timer-separator">:</div>
+                            <div class="timer-unit">
+                                <div class="timer-number">12</div>
+                                <div class="timer-text">초</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cta-offer2">
+                    <div class="price-box">
+                        <div class="original-price">₩200,000</div>
+                        <div class="discount-price">₩99,000</div>
+                        <div class="discount-badge">50% OFF</div>
+                    </div>
+                </div>
+                
+                <button class="btn-primary large">
+                    <span>지금 시작하기</span>
+                    <div class="btn-shine"></div>
+                </button>
+                
+                <div class="cta-guarantee">
+                    <span class="guarantee-icon">🛡️</span>
+                    <span>30일 무조건 환불 보장</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="footer-background">
+            <div class="footer-pattern"></div>
+        </div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="logo-icon">
+                            <div class="camera-body">
+                                <div class="camera-lens"></div>
+                                <div class="camera-flash"></div>
+                            </div>
+                        </div>
+                        <span class="logo-text">LifeCast</span>
+                    </div>
+                    <p class="brand-description">당신의 인생을 영화처럼</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📘</a>
+                        <a href="#" class="social-link">📷</a>
+                        <a href="#" class="social-link">🐦</a>
+                        <a href="#" class="social-link">📺</a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>서비스</h4>
+                        <a href="#">자서전 영상 제작</a>
+                        <a href="#">테마 선택</a>
+                        <a href="#">가격 안내</a>
+                        <a href="#">샘플 영상</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>고객지원</h4>
+                        <a href="#">자주 묻는 질문</a>
+                        <a href="#">제작 가이드</a>
+                        <a href="#">문의하기</a>
+                        <a href="#">이용약관</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>회사</h4>
+                        <a href="#">회사 소개</a>
+                        <a href="#">채용 정보</a>
+                        <a href="#">파트너십</a>
+                        <a href="#">언론 보도</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>연락처</h4>
+                        <a href="mailto:hello@lifecast.com">hello@lifecast.com</a>
+                        <a href="tel:02-1234-5678">02-1234-5678</a>
+                        <div class="address">
+                            서울시 강남구 테헤란로 123<br>
+                            LifeCast 빌딩 10층
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 LifeCast. All rights reserved.</p>
+                    <div class="footer-bottom-links">
+                        <a href="#">개인정보처리방침</a>
+                        <a href="#">이용약관</a>
+                        <a href="#">쿠키 정책</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    // 가로 타임라인 드래그 스크롤
+    const timeline = document.querySelector('.process-timeline.horizontal-scroll');
+    if (timeline) {
+      let isDown = false;
+      let startX;
+      let scrollLeft;
+      timeline.addEventListener('mousedown', (e) => {
+        isDown = true;
+        timeline.classList.add('dragging');
+        startX = e.pageX - timeline.offsetLeft;
+        scrollLeft = timeline.scrollLeft;
+      });
+      timeline.addEventListener('mouseleave', () => {
+        isDown = false;
+        timeline.classList.remove('dragging');
+      });
+      timeline.addEventListener('mouseup', () => {
+        isDown = false;
+        timeline.classList.remove('dragging');
+      });
+      timeline.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - timeline.offsetLeft;
+        const walk = (x - startX) * 1.5; // 스크롤 속도
+        timeline.scrollLeft = scrollLeft - walk;
+      });
+      // 모바일 터치 지원
+      let touchStartX = 0;
+      let touchScrollLeft = 0;
+      timeline.addEventListener('touchstart', (e) => {
+        touchStartX = e.touches[0].pageX;
+        touchScrollLeft = timeline.scrollLeft;
+      });
+      timeline.addEventListener('touchmove', (e) => {
+        const x = e.touches[0].pageX;
+        const walk = (x - touchStartX) * 1.5;
+        timeline.scrollLeft = touchScrollLeft - walk;
+      });
+    }
+    </script>
+</body>
+</html>
